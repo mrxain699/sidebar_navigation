@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link type="text/css" rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <!--Sidebar-->
+    <aside class="sidebar" id="sidebar">
+        <!--Header-->
+        <header class="sidebar_header">
+            <div class="icon_top">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <!--sidebar_top-->
+            <div class="user_profile">
+                <img src="images/p-1.jpg" alt="image" class="profile_image">
+                <div class="user_detail">
+                    <span class="welcome_msg">Good Day <span class="welcome_hand">&#9995;</span></span>
+                    <h2 class="username">Vitaliy D.</h2>
+                </div>          
+            </div>
+            <!--user_profile-->
+            <span class="close_sidebar_btn" id="min_and_max_btn"><i class="fa-solid fa-angle-left" id="btn_icon"></i></span>
+        </header>
+
+        <!--Navbar-->
+        <nav class="navbar" id="navbar">
+            <span class="section_heading">Menu: 6</span>
+            <ul class="navbar_list">
+                <li class="list_item active">
+                    <a href="#" class="nav_link" onclick="animate_navs(0)">
+                        <div class="link_attribute">
+                            <i class="fa-solid fa-chart-simple"></i>
+                            <span>Dashboard</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="list_item">
+                    <a href="#" class="nav_link " onclick="animate_navs(1)">
+                        <div class="link_attribute">
+                            <i class="fa fa-folder"></i>
+                            <span>Project</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="list_item">
+                    <a href="#" class="nav_link " onclick="animate_navs(2)">
+                        <div class="link_attribute">
+                            <i class="fa-solid fa-calendar"></i>
+                            <span>Calender</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="list_item">
+                    <a href="#" class="nav_link " onclick="animate_navs(3)">
+                        <div class="link_attribute">
+                            <i class="fa fa-envelope"></i>
+                            <span>Mail</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="list_item">
+                    <a href="#" class="nav_link " onclick="animate_navs(4)">
+                        <div class="link_attribute">
+                            <i class="fa fa-bell"></i>
+                            <span>Notification</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="list_item">
+                    <a href="#" class="nav_link " onclick="animate_navs(5)">
+                        <div class="link_attribute">
+                            <i class="fa fa-shopping-bag"></i>
+                            <span>Sales</span>
+                        </div>
+                    </a>
+                </li>
+                <div class="side_border" id="border"></div>
+            </ul>
+        </nav>
+
+        <!-- Services -->
+        <div class="services">
+            <span class="section_heading">Services: 3</span>
+            <div class="services_items">
+                <a href="#" class="active">
+                    <div class="link_attribute">
+                        <i class="fa-brands fa-jira"></i>
+                        <span>Jira software</span>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="link_attribute">
+                        <i class="fa-brands fa-slack"></i>
+                        <span>Slack</span>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="link_attribute">
+                        <i class="fa-brands fa-intercom"></i>
+                        <span>Intercom</span>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="link_attribute">
+                        <i class="fa-solid fa-circle-plus"></i>
+                        <span>Add new plugin</span>
+                    </div>
+                </a>     
+            </div>
+        </div>
+
+        <!--Settings-->
+        <div class="settings">
+            <span class="section_heading">Settings: 4</span>
+            <div class="setting_items">
+                <span class="active"><i class="fa-solid fa-file-circle-plus"></i></span>
+                <span><i class="fa-solid fa-arrow-down-1-9"></i></span>
+                <span><i class="fa-solid fa-user"></i></span>
+                <span><i class="fa-solid fa-chart-pie"></i></span>
+                <span><i class="fa-solid fa-sun"></i></span>
+                <span><i class="fa-solid fa-right-from-bracket"></i></span>
+            </div>
+        </div>
+
+        <!--Sidebar Footer -->
+        <footer class="sidebar_footer">
+            <div class="footer_items">
+                <span><i class="fa-solid fa-circle-plus"></i></span>
+                <h3>Create new task</h3>
+                <p>Or use <strong class="strong">invite link</strong></p>
+            </div>
+        </footer>
+
+    </aside>
+    <script type="text/javascript" src="app.js"></script>
+</body>
+</html>
